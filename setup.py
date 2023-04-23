@@ -12,7 +12,7 @@ if is_py2:
 long_description = open('README.rst').read()
 
 if is_py2:
-    long_description = long_description.decode('utf8')
+    long_description = long_description
 
 setup(
     name='django-ipgeobase',
@@ -25,7 +25,7 @@ setup(
     url='https://github.com/satels/django-ipgeobase',
     download_url='https://github.com/satels/django-ipgeobase/zipball/master',
     license='MIT license',
-    description='Приложение для работы с базой ipgeobase.ru.'.encode('utf8'),
+    description='Приложение для работы с базой ipgeobase.ru.',
     long_description=long_description,
 
     classifiers=(
